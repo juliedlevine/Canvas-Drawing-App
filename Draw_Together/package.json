@@ -1,0 +1,21 @@
+{
+  "name": "draw_together",
+  "version": "1.0.0",
+  "description": "Drawing application with Express and Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "canvas",
+    "express",
+    "socket"
+  ],
+  "author": "Julie and Justin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}

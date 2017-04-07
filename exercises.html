@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Canvas Exercises</title>
+    </head>
+    <body>
+        <canvas id="canvas" width="400" height="400"></canvas>
+    </body>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        // 2 Rectangles one inside the other
+        ctx.fillStyle = 'LightBlue'
+        ctx.fillRect(100, 100, 100, 100);
+        ctx.fillStyle = 'LightSalmon'
+        ctx.fillRect(125,  125, 50, 50);
+
+        // 2 Circles one inside the other
+        ctx.beginPath();
+        ctx.fillStyle = 'LightSeaGreen';
+        ctx.ellipse(300, 300, 50, 50, 0, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.beginPath();
+        ctx.fillStyle = 'LightPink';
+        ctx.ellipse(300, 300, 25, 25, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+    </script>
+</html>
